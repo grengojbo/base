@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get -yq upgrade
 
 # only the most important base packages
-RUN apt-get install -yq ca-certificates net-tools
+RUN apt-get install -yq ca-certificates net-tools sudo
 
 # generate a local to suppress warnings
 RUN locale-gen en_US.UTF-8
