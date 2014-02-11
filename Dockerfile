@@ -3,10 +3,6 @@ MAINTAINER Gabriel Monroy <gabriel@opdemand.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# upgrade base system packages
-#RUN apt-get update
-#RUN apt-get -yq upgrade
-
 # only the most important base packages
 RUN apt-get install -yq ca-certificates net-tools sudo
 
