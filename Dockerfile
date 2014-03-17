@@ -28,5 +28,5 @@ RUN cd /tmp && \
 #    rm -rf /tmp/confd
 
 # install confd fork from https://github.com/gabrtv/confd (with iteration support)
-RUN wget -q https://s3-us-west-2.amazonaws.com/deis/confd -O /usr/local/bin/confd
+RUN wget -q https://s3-us-west-2.amazonaws.com/deis/confd.bf9747a -O /usr/local/bin/confd
 RUN chmod +x /usr/local/bin/confd
