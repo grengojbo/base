@@ -4,7 +4,7 @@ MAINTAINER Gabriel Monroy <gabriel@opdemand.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # only the most important base packages
-RUN apt-get update && apt-get install -yq ca-certificates net-tools sudo wget
+RUN apt-get update && apt-get install -yq ca-certificates net-tools sudo wget build-essential
 
 # generate a local to suppress warnings
 RUN locale-gen en_US.UTF-8
