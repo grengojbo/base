@@ -17,5 +17,5 @@ ADD https://s3-us-west-2.amazonaws.com/opdemand/etcdctl-v0.4.5 /usr/local/bin/et
 RUN chmod +x /usr/local/bin/etcdctl
 
 # install confd
-ADD https://s3-us-west-2.amazonaws.com/opdemand/confd-v0.4.1 /usr/local/bin/confd
+ADD https://s3-us-west-2.amazonaws.com/opdemand/confd-v0.5.0 /usr/local/bin/confd
 RUN chmod +x /usr/local/bin/confd
