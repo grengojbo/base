@@ -1,8 +1,10 @@
 FROM ubuntu:12.04
 MAINTAINER Gabriel Monroy <gabriel@opdemand.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # teh deps
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -yq \
+RUN apt-get update && apt-get install -yq \
     make \
     ca-certificates \
     net-tools \
