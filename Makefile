@@ -1,10 +1,10 @@
 all: build
 
 build:
-	docker build -t deis/base .
+	docker build -t grengojbo/base .
 
 shell:
-	docker run -it --rm deis/base /bin/bash
+	docker run -it --rm grengojbo/base /bin/bash
 
 clean:
-	docker rmi deis/base
+	docker rmi grengojbo/base
