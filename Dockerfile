@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 MAINTAINER Gabriel Monroy <gabriel@opdemand.com>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -yq \
 RUN locale-gen en_US.UTF-8
 
 # download latest stable etcdctl
-ADD https://s3-us-west-2.amazonaws.com/opdemand/etcdctl-v0.4.5 /usr/local/bin/etcdctl
+ADD https://s3-us-west-2.amazonaws.com/opdemand/etcdctl-v0.4.6 /usr/local/bin/etcdctl
 RUN chmod +x /usr/local/bin/etcdctl
 
 # install confd
