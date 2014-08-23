@@ -8,3 +8,8 @@ shell:
 
 clean:
 	docker rmi grengojbo/base
+
+push:
+	@docker push grengojbo/base
+
+.PHONY: all clean shell build
