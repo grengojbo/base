@@ -1,4 +1,4 @@
-IMAGE=grengojbo/go
+IMAGE=grengojbo/base
 
 all: build
 
