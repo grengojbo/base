@@ -2,6 +2,8 @@
 
 A Docker image with Ubuntu 14.04 LTS, for use in the [Deis](http://deis.io) open source PaaS.
 
+Added elliptics-client rift
+
 [![image](https://d207aa93qlcgug.cloudfront.net/img/icons/framed-icon-checked-repository.svg)](https://index.docker.io/u/deis/base/)
 
 [**Trusted Build**](https://index.docker.io/u/deis/base/)
