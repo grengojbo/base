@@ -1,14 +1,11 @@
 # BeeGo APP base host
 #
-# VERSION               1.0.1
+# VERSION               1.0.2
 
 FROM ubuntu:14.04
 MAINTAINER Gabriel Monroy <gabriel@opdemand.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-
-ADD reverbrain.list /etc/apt/sources.list.d/reverbrain.list
-RUN curl http://repo.reverbrain.com/REVERBRAIN.GPG | apt-key add -
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -23,8 +20,12 @@ RUN apt-get update && apt-get install -yq \
     vim \
     strace \
     lsof \
-    netcat mc elliptics-client rift \
+    netcat mc curl \
     --no-install-recommends
+
+ADD reverbrain.list /etc/apt/sources.list.d/reverbrain.list
+RUN curl http://repo.reverbrain.com/REVERBRAIN.GPG | apt-key add -
+RUN apt-get update && apt-get install -yq elliptics-client rift --no-install-recommends
 
 RUN apt-get -y autoremove
 RUN apt-get -y autoclean
